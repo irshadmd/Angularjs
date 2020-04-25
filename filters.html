@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Filters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  </head>
+  <body ng-app>
+    <div>
+      <p>{{'Converting number into currency format'|uppercase}}</p>
+      Enter number <input type="number" ng-model="value">
+      <p><span>by default dolars </span>{{value|currency}}</p>
+      <p>{{value|currency:'Rs.'}}</p>
+      <p>{{value|currency:'Rs.':5}}</p>
+    </div>
+  </body>
+</html>
