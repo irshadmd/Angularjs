@@ -7,8 +7,8 @@ loginApp.config(['$routeProvider',function($routeProvider){
   })
   .when('/dashboard',{
     resolve:{
-      "check":function(){
-        if(1==1){
+      "check":function($location,$rootScope){
+        if(!$rootScope.logggedIn){
           $location.path('/')
         }
       }
@@ -20,9 +20,10 @@ loginApp.config(['$routeProvider',function($routeProvider){
   });
 }]);
 
-loginApp.controller('loginController',['$scope','$location',function($scope,$location){
+loginApp.controller('loginController',['$scope','$location','$rootScope',function($scope,$location,$rootScope){
   $scope.submit=function(){
     if($scope.username=='admin' && $scope.password=="admin"){
+      $rootScope.logggedIn=true;
       $location.path('/dashboard')
     }else{
       alert('incorrect username and password')
