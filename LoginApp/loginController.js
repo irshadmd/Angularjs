@@ -6,6 +6,13 @@ loginApp.config(['$routeProvider',function($routeProvider){
     templateUrl:'login.html'
   })
   .when('/dashboard',{
+    resolve:{
+      "check":function(){
+        if(1==1){
+          $location.path('/')
+        }
+      }
+    },
     templateUrl:'dashboard.html'
   })
   .otherwise({
