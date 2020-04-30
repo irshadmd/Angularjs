@@ -1,0 +1,36 @@
+{
+  "records":[
+    {
+      "name":"Phoebe",
+      "age":25
+    },
+    {
+      "name":"Chandler",
+      "age":27
+    },
+    {
+      "name":"Racheal",
+      "age":24
+    },
+    {
+      "name":"Joey",
+      "age":26
+    },
+    {
+      "name":"Monica",
+      "age":25
+    },
+    {
+      "name":"Ross",
+      "age":26
+    },
+    {
+      "name":"Janice",
+      "age":27
+    },
+    {
+      "name":"Jullie",
+      "age":24
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Search Box</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="controller.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <h2>Search Box</h2>
+    <h3>Name and age of Friends Character</h3>
+    <div ng-controller="myController">
+      <ul>
+        <p>
+          <span>Search</span>
+          <input type="text" ng-model="searchkey">
+        </p>
+        <li ng-repeat="person in persons|filter:searchkey">{{ person.name+' : '+person.age }}</li>
+      </ul>
+    </div>
+  </body>
+</html>
