@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Service in Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="controller.js"></script>
+  </head>
+  <body ng-app="serviceApp">
+    <div ng-controller="appController">
+      <button type="button" ng-click="randomFun()">Generate Random number</button><br>
+      {{ randomNum }}
+    </div>
+  </body>
+</html>
