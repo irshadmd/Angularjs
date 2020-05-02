@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Factory in Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="controller.js"></script>
+  </head>
+  <body ng-app="factoryApp">
+    <div ng-controller="factoryController">
+      <button type="button" ng-click="generateRand()">Genarte random Number</button>
+      {{randomNum}}
+    </div>
+  </body>
+</html>
