@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Directive ngShow</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="controller.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller='myController'>
+        <button ng-click='toggle()'>Click</button>
+        <div class="message" ng-show="show=='msg1'">This is First Div</div>
+        <div class="message" ng-show="show=='msg2'">This is Second Div</div>
+    </div>
+</body>
+</html>
